@@ -3,18 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
     <title>Vijay Sales - Order Processed</title>
 
     <style>
         .pl-48 {
             padding-left: 48px;
+        }
+
+        .pr-49 {
+            padding-right: 49px;
         }
 
         .plr-48 {
@@ -33,7 +30,7 @@
         }
 
         p {
-            margin: 0;
+            margin: 0 !important;
         }
 
         th, td {
@@ -44,11 +41,13 @@
             text-decoration: none;
         }
         table, tr, th, td, a, p, div {
-            font-family: 'Roboto';
+            font-family: Arial, sans-serif;
+            font-weight: 400;
         }
         body {
             margin: 0 auto;
-            font-family: 'Roboto';
+            font-family: Arial, sans-serif;
+            font-weight: 400;
         }
 
         table {
@@ -59,23 +58,37 @@
             max-width: 260px;
         }
 
+        .strikedText {
+            position: relative;
+        }
+
+        .strikedText::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            border-bottom: 0.5px solid #262626;
+        }
+
         @media only screen and (max-width:480px) {
             .pName {
                 max-width: 200px !important;
                 width: 100%;
             }
         }
-        
     </style>
 </head>
 
 <body>
     <table cellspacing="0" cellpadding="0" width="800" style="margin: 0 auto; border: 0;">
 
-        <thead style="background-color: #000000;">
-            <tr style="text-align: left;">
-                <th style="padding: 25px 0 26px 50px; text-align: left;">
-                    <img src="vijay-sales-logo.png" width="148.87px" height="28px" style="margin: 0;">
+        <thead style="background-color: #000000 !important;">
+            <tr style="text-align: left; mix-blend-mode: screen; background-color: #000000 !important;">
+                <th style="padding: 25px 0 26px 50px; text-align: left;" media="(prefers-color-scheme: light)">
+                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/vijay-sales-logo.png" width="148.87px" height="28px" style="margin: 0;" >
                 </th>
             </tr>
         </thead>
@@ -99,7 +112,7 @@
             </tr>
 
             <tr>
-                <td class="pl-48" style="display: flex; margin-bottom: 47px;">
+                <td class="pl-48" style="display: flex; margin-bottom: 56px;">
                     <a href="#"
                         style="background-color: #000000; border-radius: 40px; padding: 10px 16px; color: #ffffff; font-size: 12px; line-height: 16px; text-align: center; text-transform: capitalize;">Track
                         my order</a>
@@ -107,50 +120,44 @@
             </tr>
 
             <tr>
-                <td class="plr-48" style="display: block; margin-bottom: 57px;">
-                    <img src="order-status.png" width="703px" height="46px">
-                </td>
-            </tr>
-
-            <tr>
                 <td class="pl-48" style="display: block; margin-bottom: 16px;">
-                    <p style="font-size: 21px; line-height: 27px; text-align: left; color: #000000; font-weight: 700;">
+                    <p style="font-size: 21px; line-height: 27px; text-align: left; color: #000000; font-weight: bold;">
                         Here's what we are delivering</p>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <table cellspacing="0" cellpadding="0" width="752px" style="border: 0; border-radius: 16px; padding: 24px 24px 19px; background-color: #EAECEF;" valign="top">
+                    <table cellspacing="0" cellpadding="0" width="752px" style="border: 0; border-radius: 16px; padding: 24px; background-color: #EAECEF;" valign="top">
                         <!-- <thead> -->
                             <tr>
-                                <td colspan="3" width="50%" style="text-align: left; padding-bottom: 8px; border-bottom: 1px solid #434343;">
-                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 700;"><strong>Order Number :</strong></span>
+                                <td colspan="2" width="50%" style="text-align: left; padding-bottom: 8px; border-bottom: 1px solid #434343;">
+                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order Number :</strong></span>
                                     <span style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">VS0001692931</span>
                                 </td>
 
-                                <td colspan="2" width="50%" style="text-align: right; padding-bottom: 8px; border-bottom: 1px solid #434343;">
-                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 700;"><strong>Order Date:</strong></span>
+                                <td colspan="3" width="50%" style="text-align: right; padding-bottom: 8px; border-bottom: 1px solid #434343;">
+                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order Date:</strong></span>
                                     <span style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">08-Feb-2024</span>
                                 </td>
                             </tr>
 
-                            <tr style="display: grid; grid-template-columns: 15% 20% 45% 10% 10%; width: 100%;">
-                                <td style="padding-top: 18px; padding-bottom: 16px; max-width: 35.2px; width: 100%;">
+                            <tr>
+                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 35.2px; width: 35.2px;">
                                     <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">#</p>
                                 </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; max-width: 211.2px; width: 100%;"></td>
+                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 211.2px; width: 211.2px;"></td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; max-width: 281.6px; width: 100%;">
+                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 281.6px; width: 281.6px;">
                                     <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">Item</p>
                                 </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; max-width: 70.4px; width: 100%;">
+                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 70.4px; width: 70.4px;">
                                     <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-transform: uppercase;">Qty</p>
                                 </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; max-width: 105.6px; width: 100%;">
+                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 105.6px; width: 105.6px;">
                                     <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-align: right;">Price</p>
                                     <p style="font-size: 10px; line-height: 12px; color: #7B7B7B; text-align: left; font-weight: 400; text-align: right;">(Inclusive of All Taxes)</p>
                                 </td>
@@ -158,69 +165,68 @@
                         <!-- </thead> -->
 
                         <!-- <tbody> -->
-                            <tr style="border-bottom:1px solid rgb(217,217,217);display: grid;grid-template-columns: 15% 20% 45% 10% 10%;width: 100%;">
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  max-width: 35.2px; width: 100%;">
+                            <tr style="border-bottom: 1px solid #D9D9D9;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 35.2px; width: 35.2px;">
                                     <p>1</p>
                                 </td>
 
-                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; max-width: 211.2px; width: 100%;">
-                                    <img src="product-image1.png" />
+                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
+                                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/product-image1.png" />
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  max-width: 281.6px; width: 100%;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Philips Dry Iron with Golden American Heritage Soleplate, 1000Watts, Iron Temperature-Ready Light, Temperature...</p>
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 281.6px; width: 281.6px;">
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Philips Dry Iron with Golden American Heritage Soleplate, 1000Watts, Iron Temperature-Ready Light, Temperatur...</p>
 
                                     <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour: White</p>
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  max-width: 70.4px; width: 100%;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 70.4px; width: 70.4px;">
                                     <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right;  max-width: 105.6px; width: 100%;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right;  min-width: 105.6px; width: 105.6px;">
                                     <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;"><span>₹</span><span>20980.00</span></p>
                                 </td>
                             </tr>
 
-                            <tr style="border-bottom:1px solid rgb(217,217,217);display: grid;grid-template-columns: 15% 20% 45% 10% 10%;width: 100%;">
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; max-width: 35.2px; width: 100%;">
+                            <tr style="border-bottom: 1px solid #D9D9D9;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 35.2px; width: 35.2px;">
                                     <p>2</p>
                                 </td>
 
-                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; max-width: 211.2px; width: 100%;">
-                                    <img src="product-image2.png" />
+                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
+                                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/product-image2.png" />
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; max-width: 281.6px; width: 100%;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Daikin Standard Series 1.5 Ton (3 Star) Split AC with Copper Condenser, PM 2.5 Filter, Coanda Airflow (FTL50UV)</p>
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 281.6px; width: 281.6px;">
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Daikin Standard Series 1.5 Ton (3 Star) Split AC with Copper Condenser, PM 2.5 Filter, Coanda Airflow (FTL50UV) Coanda Airflow (FTL50UV)</p>
 
                                     <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour: White</p>
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; max-width: 70.4px; width:100%;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 70.4px; width: 70.4px;">
                                     <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
                                 </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right; max-width: 105.6px; width: 100%;">
+                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right; min-width: 105.6px; width: 105.6px;">
                                     <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;"><span>₹</span><span>5,05,600</span></p>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td colspan="5" style="padding-top: 22px; padding-bottom: 24px;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: 700;">Order Summary</p>
+                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Order Summary</p>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td colspan="3" style="text-align: left; padding-bottom: 9px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Products Price</p>
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Price (2 items)</p>
                                 </td>
 
                                 <td colspan="2" style="text-align: right; padding-bottom: 9px;">
                                     <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
-                                        <span>₹</span>
-                                        <span>13,998.00</span>
+                                        <span>₹</span><span>13,998.00</span>
                                     </p>
                                 </td>
                             </tr>
@@ -232,41 +238,61 @@
 
                                 <td colspan="2" style="text-align: right; padding-bottom: 9px;">
                                     <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
-                                        <span>₹</span>
-                                        <span>0,000.00</span>
+                                        <span>₹</span><span>0,000.00</span>
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="text-align: left; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Delivery Charges</p>
+                                </td>
+
+                                <td colspan="2" style="text-align: right; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
+                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 400;"><span class="strikedText">₹150</span> <span style="color: #3DA92C;">Free</span></p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="text-align: left; padding-bottom: 8px; padding-top: 8px;">
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Add ons</p>
+                                </td>
+
+                                <td colspan="2" style="text-align: right; padding-bottom: 8px; padding-top: 8px;">
+                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
+                                        <span>₹</span><span>1,468.00</span>
                                     </p>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td colspan="3" style="text-align: left; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Shipping Charges</p>
+                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">VS Extended Warranty</p>
                                 </td>
 
                                 <td colspan="2" style="text-align: right; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">-</p>
+                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;"><span>₹</span><span>2,691.00</span></p>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td colspan="3" style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: 700;">Subtotal</p>
+                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Total</p>
                                 </td>
 
                                 <td colspan="2" style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D; text-align: right;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #000000; font-weight: 700; margin-bottom: 4px;">
-                                        <span>₹</span>
-                                        <span>13,998.00</span>
+                                    <p style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 4px;">
+                                        <span>₹</span><span>13,998.00</span>
                                     </p>
                                     <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">(Including Taxes)</p>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td style="vertical-align: bottom; text-align: left; padding-top: 16px;"><img src="shipping-icon.png" width="24px" height="24px"/></td>
-                                <td colspan="4" style="padding-top: 16px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 700;">Shipping Cost: Rs.300<sup>*</sup></p>
-                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 400;">Some shipping areas may take up to 7 business days for delivery.</p>
+                                <td style="vertical-align: bottom; text-align: left; padding-top: 24px;"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/shipping-icon.png" width="24px" height="24px"/></td>
+                                <td colspan="4" style="padding-top: 24px;">
+                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: bold;">Shipping Cost: Rs.300<sup>*</sup></p>
+                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 400;">Some shipping areas may take up to <span style="font-weight: 600;">7 business days</span> for delivery.</p>
                                 </td>
                             </tr>
 
@@ -291,63 +317,78 @@
             </tr>
 
             <tr>
-                <td colspan="5" class="plr-48" style="padding-top: 32px; padding-bottom: 68px;">
+                <td colspan="5" class="pl-48 pr-49" style="padding-top: 32px; padding-bottom: 68px;">
                     <p style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 25px;">Need help with your order?</p>
 
-                    <p style="display: flex; align-items: center; margin-bottom: 16px;">
-                        <span><img src="phone-icon.png" width="24px" height="24px"></span>
-                        <span style="margin-left: 8px;"><a href="tel:+917303434043" style="font-size: 14px; line-height: 18px; color: #000000; font-weight: 600; text-decoration: underline; ">+91 7303434043</a></span>
-                    </p>
-
-                    <p style="display: flex; align-items: center; margin-bottom: 16px;">
-                        <span>
-                            <img src="phone-icon.png" width="24px" height="24px">
-                        </span>
+                    <ul style="padding-left: 0; padding-right: 0; float: left;">
                         
-                        <span style="margin-left: 8px;">
-                            <a href="tel:+919911012303" style="font-size: 14px; line-height: 18px; color: #000000; font-weight: 600; text-decoration: underline; ">+91 9911012303</a>
-                            <span style="font-size: 10px; line-height: 12px; color: #666666; font-weight: 400; display: block;">Give us missed call to allow us to contact you via WhatsApp</span>
-                        </span>
-                    </p>
+                        <li style="display: inline-block; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
+                            <div style="padding: 24px 11px 19px 12px;">
+                                <img src="phone.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
+                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">Call Us</p>
+                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">Give us missed call to allow us to contact you back</p>
 
-                    <p style="display: flex; align-items: center;">
-                        <span><img src="envelope.png" width="24px" height="24px"></span>
-                        <span style="margin-left: 8px;"><a href="mailto:onlinesupport@vijaysales.com" style="font-size: 14px; line-height: 18px; color: #000000; font-weight: 600; text-decoration: underline;">onlinesupport@vijaysales.com</a></span>
-                    </p>
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
+
+                                <a href="tel:+917303434043" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91 7303434043</a>
+                            </div>
+                        </li><li style="display: inline-block; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
+                            <div style="padding: 24px 11px 19px 12px;">
+                                <img src="envelope.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
+                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">Email Support</p>
+                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">We’ ll respond within 24 hours of your request.</p>
+
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
+
+                                <a href="mailto:onlinesupport@vijaysales.com" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">onlinesupport@vijaysales.com</a>
+                            </div>
+                        </li><li style="display: inline-block; max-width: 213px; width: 213px; margin-left: 0;">
+                            <div style="padding: 24px 11px 19px 12px;">
+                                <img src="whatsapp1.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
+                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">WhatsApp</p>
+                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">Give us missed call to allow us to contact you via WhatsApp</p>
+
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
+
+                                <a href="tel:+919911012303" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91 9911012303</a>
+                            </div>
+                        </li>
+                        
+                    </ul>
                 </td>
             </tr>
 
             <tr class="mlr-48" style="display: block; border-top: 1px solid #434343; padding-top: 23px; padding-bottom: 32px; flex-wrap: nowrap; flex: 1;">
-                <td colspan="3" style="float: left; width: 50%;">
+                <td colspan="3" style="float: left; width: 40%;">
                     <p style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; margin-bottom: 8px;">Follow us on Socials</p>
 
                     <ul style="float: left; padding-left: 0; margin: 0;">
-                        <li style="display: inline-block; margin-right: 20px;">
-                            <a href="#"><img src="whatsapp.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/whatsapp.png" width="24px" height="24px"/></a>
                         </li>
                         
-                        <li style="display: inline-block; margin-right: 20px;">
-                            <a href="#"><img src="facebook.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/facebook.png" width="24px" height="24px"/></a>
                         </li>
 
-                        <li style="display: inline-block; margin-right: 20px;">
-                            <a href="#"><img src="twitter.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/twitter.png" width="24px" height="24px"/></a>
                         </li>
 
-                        <li style="display: inline-block; margin-right: 20px;">
-                            <a href="#"><img src="instagram.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/instagram.png" width="24px" height="24px"/></a>
                         </li>
 
-                        <li style="display: inline-block; margin-right: 20px;">
-                            <a href="#"><img src="youtube.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/youtube.png" width="24px" height="24px"/></a>
                         </li>
 
-                        <li style="display: inline-block;">
-                            <a href="#"><img src="linkedin.png" width="24px" height="24px"/></a>
+                        <li style="display: inline-block; margin-left: 0;">
+                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/linkedin.png" width="24px" height="24px"/></a>
                         </li>
                     </ul>
                 </td>
-                <td colspan="2" style="float: right; width: 50%;">
+                <td colspan="2" style="float: right; width: 60%;">
                     <p style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; text-align: right;">Copyright &copy; 2024 Vijay Sales. All rights reserved.</p>
 
                     <p style="padding-left: 0; text-align: right; width: 100%; padding-top: 16px; display: table;">
