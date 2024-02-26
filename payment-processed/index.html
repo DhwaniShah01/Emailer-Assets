@@ -6,6 +6,11 @@
     <title>Vijay Sales - Order Processed</title>
 
     <style>
+        table {
+            position: relative;
+            overflow: hidden;
+        }
+
         .pl-48 {
             padding-left: 48px;
         }
@@ -33,17 +38,27 @@
             margin: 0 !important;
         }
 
-        th, td {
+        th,
+        td {
             vertical-align: top;
         }
 
         a {
             text-decoration: none;
         }
-        table, tr, th, td, a, p, div {
+
+        table,
+        tr,
+        th,
+        td,
+        a,
+        p,
+        div {
             font-family: Arial, sans-serif;
             font-weight: 400;
+            border-spacing: 0;
         }
+
         body {
             margin: 0 auto;
             font-family: Arial, sans-serif;
@@ -73,10 +88,27 @@
             border-bottom: 0.5px solid #262626;
         }
 
+        .productCard {
+            display: flex;
+            gap: 0px;
+            align-items: center;
+        }
+
         @media only screen and (max-width:480px) {
             .pName {
                 max-width: 200px !important;
                 width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .productCard {
+                display: block;
+            }
+            .productCard .productCardInn {
+                width: 45%;
+                float: left;
+                margin: 0 5% 5% 0 !important;
             }
         }
     </style>
@@ -88,7 +120,8 @@
         <thead style="background-color: #000000 !important;">
             <tr style="text-align: left; mix-blend-mode: screen; background-color: #000000 !important;">
                 <th style="padding: 25px 0 26px 50px; text-align: left;" media="(prefers-color-scheme: light)">
-                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/vijay-sales-logo.png" width="148.87px" height="28px" style="margin: 0;" >
+                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/vijay-sales-logo.png"
+                        width="148.87px" height="28px" style="margin: 0;">
                 </th>
             </tr>
         </thead>
@@ -128,173 +161,243 @@
 
             <tr>
                 <td>
-                    <table cellspacing="0" cellpadding="0" width="752px" style="border: 0; border-radius: 16px; padding: 24px; background-color: #EAECEF;" valign="top">
+                    <table cellspacing="0" cellpadding="0" width="752px"
+                        style="border: 0; border-radius: 16px; padding: 24px; background-color: #EAECEF;" valign="top">
                         <!-- <thead> -->
-                            <tr>
-                                <td colspan="2" width="50%" style="text-align: left; padding-bottom: 8px; border-bottom: 1px solid #434343;">
-                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order Number :</strong></span>
-                                    <span style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">VS0001692931</span>
-                                </td>
+                        <tr>
+                            <td colspan="2" width="50%"
+                                style="text-align: left; padding-bottom: 8px; border-bottom: 1px solid #434343;">
+                                <span
+                                    style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order
+                                        Number :</strong></span>
+                                <span
+                                    style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">VS0001692931</span>
+                            </td>
 
-                                <td colspan="3" width="50%" style="text-align: right; padding-bottom: 8px; border-bottom: 1px solid #434343;">
-                                    <span style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order Date:</strong></span>
-                                    <span style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">08-Feb-2024</span>
-                                </td>
-                            </tr>
+                            <td colspan="3" width="50%"
+                                style="text-align: right; padding-bottom: 8px; border-bottom: 1px solid #434343;">
+                                <span
+                                    style="font-size: 16px; line-height: 20px; color: #262626; font-weight: bold;"><strong>Order
+                                        Date:</strong></span>
+                                <span
+                                    style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 400;">08-Feb-2024</span>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 35.2px; width: 35.2px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">#</p>
-                                </td>
+                        <tr>
+                            <td style="padding-top: 18px; padding-bottom: 16px; min-width: 35.2px; width: 35.2px;">
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">
+                                    #</p>
+                            </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 211.2px; width: 211.2px;"></td>
+                            <td style="padding-top: 18px; padding-bottom: 16px; min-width: 211.2px; width: 211.2px;">
+                            </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 281.6px; width: 281.6px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">Item</p>
-                                </td>
+                            <td style="padding-top: 18px; padding-bottom: 16px; min-width: 281.6px; width: 281.6px;">
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600;">
+                                    Item</p>
+                            </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 70.4px; width: 70.4px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-transform: uppercase;">Qty</p>
-                                </td>
+                            <td style="padding-top: 18px; padding-bottom: 16px; min-width: 70.4px; width: 70.4px;">
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-transform: uppercase;">
+                                    Qty</p>
+                            </td>
 
-                                <td style="padding-top: 18px; padding-bottom: 16px; min-width: 105.6px; width: 105.6px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-align: right;">Price</p>
-                                    <p style="font-size: 10px; line-height: 12px; color: #7B7B7B; text-align: left; font-weight: 400; text-align: right;">(Inclusive of All Taxes)</p>
-                                </td>
-                            </tr>
+                            <td style="padding-top: 18px; padding-bottom: 16px; min-width: 105.6px; width: 105.6px;">
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; text-align: left; font-weight: 600; text-align: right;">
+                                    Price</p>
+                                <p
+                                    style="font-size: 10px; line-height: 12px; color: #7B7B7B; text-align: left; font-weight: 400; text-align: right;">
+                                    (Inclusive of All Taxes)</p>
+                            </td>
+                        </tr>
                         <!-- </thead> -->
 
                         <!-- <tbody> -->
-                            <tr style="border-bottom: 1px solid #D9D9D9;">
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 35.2px; width: 35.2px;">
-                                    <p>1</p>
-                                </td>
+                        <tr style="border-bottom: 1px solid #D9D9D9;">
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 35.2px; width: 35.2px;">
+                                <p>1</p>
+                            </td>
 
-                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
-                                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/product-image1.png" />
-                                </td>
+                            <td
+                                style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
+                                <img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image1.png" />
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 281.6px; width: 281.6px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Philips Dry Iron with Golden American Heritage Soleplate, 1000Watts, Iron Temperature-Ready Light, Temperatur...</p>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 281.6px; width: 281.6px;">
+                                <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;"
+                                    class="pName">Philips Dry Iron with Golden American Heritage Soleplate, 1000Watts,
+                                    Iron Temperature-Ready Light, Temperatur...</p>
 
-                                    <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour: White</p>
-                                </td>
+                                <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour:
+                                    White</p>
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 70.4px; width: 70.4px;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
-                                </td>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9;  min-width: 70.4px; width: 70.4px;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right;  min-width: 105.6px; width: 105.6px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;"><span>₹</span><span>20980.00</span></p>
-                                </td>
-                            </tr>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right;  min-width: 105.6px; width: 105.6px;">
+                                <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>20980.00</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr style="border-bottom: 1px solid #D9D9D9;">
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 35.2px; width: 35.2px;">
-                                    <p>2</p>
-                                </td>
+                        <tr style="border-bottom: 1px solid #D9D9D9;">
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 35.2px; width: 35.2px;">
+                                <p>2</p>
+                            </td>
 
-                                <td style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
-                                    <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/product-image2.png" />
-                                </td>
+                            <td
+                                style="text-align: center; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 211.2px; width: 211.2px;">
+                                <img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image2.png" />
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 281.6px; width: 281.6px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;" class="pName">Daikin Standard Series 1.5 Ton (3 Star) Split AC with Copper Condenser, PM 2.5 Filter, Coanda Airflow (FTL50UV) Coanda Airflow (FTL50UV)</p>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 281.6px; width: 281.6px;">
+                                <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600; margin-bottom: 8px;"
+                                    class="pName">Daikin Standard Series 1.5 Ton (3 Star) Split AC with Copper
+                                    Condenser, PM 2.5 Filter, Coanda Airflow (FTL50UV) Coanda Airflow (FTL50UV)</p>
 
-                                    <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour: White</p>
-                                </td>
+                                <p style="font-size: 14px; line-height: 18px; color: #7B7B7B; font-weight: 400;">Colour:
+                                    White</p>
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 70.4px; width: 70.4px;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
-                                </td>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; min-width: 70.4px; width: 70.4px;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">1</p>
+                            </td>
 
-                                <td style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right; min-width: 105.6px; width: 105.6px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;"><span>₹</span><span>5,05,600</span></p>
-                                </td>
-                            </tr>
+                            <td
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #D9D9D9; text-align: right; min-width: 105.6px; width: 105.6px;">
+                                <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>5,05,600</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="5" style="padding-top: 22px; padding-bottom: 24px;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Order Summary</p>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td colspan="5" style="padding-top: 22px; padding-bottom: 24px;">
+                                <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Order
+                                    Summary</p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="text-align: left; padding-bottom: 9px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Price (2 items)</p>
-                                </td>
+                        <tr>
+                            <td colspan="3" style="text-align: left; padding-bottom: 9px;">
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">
+                                    Price (2 items)</p>
+                            </td>
 
-                                <td colspan="2" style="text-align: right; padding-bottom: 9px;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
-                                        <span>₹</span><span>13,998.00</span>
-                                    </p>
-                                </td>
-                            </tr>
+                            <td colspan="2" style="text-align: right; padding-bottom: 9px;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>13,998.00</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="text-align: left; padding-bottom: 9px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Discount</p>
-                                </td>
+                        <tr>
+                            <td colspan="3" style="text-align: left; padding-bottom: 9px;">
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">
+                                    Discount</p>
+                            </td>
 
-                                <td colspan="2" style="text-align: right; padding-bottom: 9px;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
-                                        <span>₹</span><span>0,000.00</span>
-                                    </p>
-                                </td>
-                            </tr>
+                            <td colspan="2" style="text-align: right; padding-bottom: 9px;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>0,000.00</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="text-align: left; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Delivery Charges</p>
-                                </td>
+                        <tr>
+                            <td colspan="3"
+                                style="text-align: left; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">
+                                    Delivery Charges</p>
+                            </td>
 
-                                <td colspan="2" style="text-align: right; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 400;"><span class="strikedText">₹150</span> <span style="color: #3DA92C;">Free</span></p>
-                                </td>
-                            </tr>
+                            <td colspan="2"
+                                style="text-align: right; padding-bottom: 8px; border-bottom: 1px dashed #9D9D9D;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 400;"><span
+                                        class="strikedText">₹150</span> <span style="color: #3DA92C;">Free</span></p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="text-align: left; padding-bottom: 8px; padding-top: 8px;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">Add ons</p>
-                                </td>
+                        <tr>
+                            <td colspan="3" style="text-align: left; padding-bottom: 8px; padding-top: 8px;">
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">
+                                    Add ons</p>
+                            </td>
 
-                                <td colspan="2" style="text-align: right; padding-bottom: 8px; padding-top: 8px;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
-                                        <span>₹</span><span>1,468.00</span>
-                                    </p>
-                                </td>
-                            </tr>
+                            <td colspan="2" style="text-align: right; padding-bottom: 8px; padding-top: 8px;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>1,468.00</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="text-align: left; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">VS Extended Warranty</p>
-                                </td>
+                        <tr>
+                            <td colspan="3"
+                                style="text-align: left; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; text-transform: capitalize;">
+                                    VS Extended Warranty</p>
+                            </td>
 
-                                <td colspan="2" style="text-align: right; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;"><span>₹</span><span>2,691.00</span></p>
-                                </td>
-                            </tr>
+                            <td colspan="2"
+                                style="text-align: right; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
+                                <p style="font-size: 16px; line-height: 20px; color: #262626; font-weight: 600;">
+                                    <span>₹</span><span>2,691.00</span>
+                                </p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="3" style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Total</p>
-                                </td>
+                        <tr>
+                            <td colspan="3"
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D;">
+                                <p style="font-size: 21px; line-height: 27px; color: #262626; font-weight: bold;">Total
+                                </p>
+                            </td>
 
-                                <td colspan="2" style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D; text-align: right;">
-                                    <p style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 4px;">
-                                        <span>₹</span><span>13,998.00</span>
-                                    </p>
-                                    <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">(Including Taxes)</p>
-                                </td>
-                            </tr>
+                            <td colspan="2"
+                                style="padding-top: 24px; padding-bottom: 24px; border-bottom: 1px dashed #9D9D9D; text-align: right;">
+                                <p
+                                    style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 4px;">
+                                    <span>₹</span><span>13,998.00</span>
+                                </p>
+                                <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">
+                                    (Including Taxes)</p>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td style="vertical-align: bottom; text-align: left; padding-top: 24px;"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/shipping-icon.png" width="24px" height="24px"/></td>
-                                <td colspan="4" style="padding-top: 24px;">
-                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: bold;">Shipping Cost: Rs.300<sup>*</sup></p>
-                                    <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 400;">Some shipping areas may take up to <span style="font-weight: 600;">7 business days</span> for delivery.</p>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td style="vertical-align: bottom; text-align: left; padding-top: 24px;"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/shipping-icon.png"
+                                    width="24px" height="24px" /></td>
+                            <td colspan="4" style="padding-top: 24px;">
+                                <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: bold;">
+                                    Shipping Cost: Rs.300<sup>*</sup></p>
+                                <p style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 400;">Some
+                                    shipping areas may take up to <span style="font-weight: 600;">7 business days</span>
+                                    for delivery.</p>
+                            </td>
+                        </tr>
 
 
                         <!-- </tbody> -->
@@ -304,100 +407,371 @@
 
             <tr class="plr-48" style="display: block; padding-top: 37px;">
                 <td colspan="5">
-                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400;">Hope you had a good experience with us! We look forward to serving you.</p>
+                    <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400;">Hope you had a good
+                        experience with us! We look forward to serving you.</p>
                     <p style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400;">Happy Shopping!</p>
                 </td>
             </tr>
 
             <tr class="plr-48" style="display: block; padding-top: 16px;">
                 <td colspan="5">
-                   <p style="font-size: 16px; line-height: 20px; color: #000000; font-weight: 600;">Best Regards,</p>
-                   <p style="font-size: 16px; line-height: 20px; color: #000000; font-weight: 600;">Vijay sales</p>
+                    <p style="font-size: 16px; line-height: 20px; color: #000000; font-weight: 600;">Best Regards,</p>
+                    <p style="font-size: 16px; line-height: 20px; color: #000000; font-weight: 600;">Vijay sales</p>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="5" class="pl-48 pr-49" style="padding-top: 32px; padding-bottom: 68px;">
-                    <p style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 25px;">Need help with your order?</p>
+                <td colspan="5" class="pl-48 pr-49" style="padding-top: 32px;">
+                    <p
+                        style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 25px;">
+                        Need help with your order?</p>
 
-                    <ul style="padding-left: 0; padding-right: 0; float: left;">
-                        
-                        <li style="display: inline-block; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
+                    <ul style="padding-left: 0; padding-right: 0; display: flex; gap: 32px; align-items: center; max-width: 704px;">
+
+                        <li style="list-style: none; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
                             <div style="padding: 24px 11px 19px 12px;">
-                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/phone-icon.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
-                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">Call Us</p>
-                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">Give us missed call to allow us to contact you back</p>
+                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/phone-icon.png"
+                                    width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;" />
+                                <p
+                                    style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">
+                                    Call Us</p>
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px; padding-bottom: 19.18px;">
+                                    Give us missed call to allow us to contact you back</p>
 
-                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; " />
 
-                                <a href="tel:+917303434043" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91 7303434043</a>
-                            </div>
-                        </li><li style="display: inline-block; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
-                            <div style="padding: 24px 11px 19px 12px;">
-                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/envelope-icon.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
-                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">Email Support</p>
-                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">We’ ll respond within 24 hours of your request.</p>
-
-                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
-
-                                <a href="mailto:onlinesupport@vijaysales.com" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">onlinesupport@vijaysales.com</a>
-                            </div>
-                        </li><li style="display: inline-block; max-width: 213px; width: 213px; margin-left: 0;">
-                            <div style="padding: 24px 11px 19px 12px;">
-                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/whatsapp-icon.png" width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;"/>
-                                <p style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">WhatsApp</p>
-                                <p style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px;">Give us missed call to allow us to contact you via WhatsApp</p>
-
-                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; "/>
-
-                                <a href="tel:+919911012303" style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91 9911012303</a>
+                                <a href="tel:+917303434043"
+                                    style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91
+                                    7303434043</a>
                             </div>
                         </li>
-                        
+                        <li style="list-style: none; max-width: 213px; width: 213px; margin-right: 32px; margin-left: 0;">
+                            <div style="padding: 24px 11px 19px 12px;">
+                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/envelope-icon.png"
+                                    width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;" />
+                                <p
+                                    style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">
+                                    Email Support</p>
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px; padding-bottom: 19.18px;">
+                                    We’ll respond within 24 hours of your request.</p>
+
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; " />
+
+                                <a href="mailto:onlinesupport@vijaysales.com"
+                                    style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">onlinesupport@vijaysales.com</a>
+                            </div>
+                        </li>
+                        <li style="list-style: none; max-width: 213px; width: 213px; margin-left: 0;">
+                            <div style="padding: 24px 11px 19px 12px;">
+                                <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/whatsapp-icon.png"
+                                    width="24px" height="24px" style="margin-bottom: 16px; padding-left: 3px;" />
+                                <p
+                                    style="margin-bottom: 4px; padding-left: 3px; font-size: 14px; line-height: 18px; color: #262626; font-weight: bold; margin-bottom: 4px; max-width: 172px;;">
+                                    WhatsApp</p>
+                                <p
+                                    style="font-size: 12px; line-height: 16px; color: #555555; font-weight: 400; margin-bottom: 19.18px; max-width: 172px; padding-left: 3px; padding-bottom: 19.18px;">
+                                    Give us missed call to allow us to contact you via WhatsApp</p>
+
+                                <hr style="margin: 0 auto; height: 0.79px; background-color: #e1e1e1; border: 0; " />
+
+                                <a href="tel:+919911012303"
+                                    style="font-size: 12px; line-height: 16px; color: #262626; font-weight: 600; text-decoration: underline; margin-top: 10.04px; display: block;">+91
+                                    9911012303</a>
+                            </div>
+                        </li>
+
                     </ul>
                 </td>
             </tr>
 
-            <tr class="mlr-48" style="display: block; border-top: 1px solid #434343; padding-top: 23px; padding-bottom: 32px; flex-wrap: nowrap; flex: 1;">
+
+            <tr>
+                <td colspan="5" class="pl-48 pr-49" style="padding-top: 32px; padding-bottom: 32px;">
+
+
+                    <table cellspacing="0" cellpadding="0" width="704" style="border: 0;" border-collapse="collapse" border-spacing="0">
+                        <tr>
+                            <td>
+                                <p
+                                    style="font-size: 21px; line-height: 27px; color: #000000; font-weight: bold; margin-bottom: 25px;">
+                                    Recommended products</p>
+                                <p
+                                    style="font-size: 14px; line-height: 18px; color: #262626; font-weight: 400; margin-bottom: 16px;">
+                                    Discover our curated selection of must-have products!</p>
+
+                                <ul class="productCard" style="padding-left: 0; padding-right: 0; padding-top: 16px; max-width: 705px; font-size: 0;">
+                                    
+                                    <li class="productCardInn" style="list-style: none; margin-left: 0; margin-right: 11px; font-size: 16px;">
+                                        <a href="#">
+                                            <div style="border: 1px solid #DCDCDC; border-radius: 16px; padding: 8px 4.56px 46px 5px; display: block;">
+                                                <ul style="padding: 0; font-size: 0; margin-bottom: 8px;">
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #000000; border: 1px solid #000000; border-radius: 56px; margin-right: 4px;">
+                                                        <span><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/vs-logo.png" width="13.44px" height="6.72px"/></span>
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #ffffff; margin-left: 4px;">Recommended</span>
+                                                    </li>
+
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #ffffff; border: 1px solid #000000; border-radius: 56px;">
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #000000;">Best Seller</span>
+                                                    </li>
+                                                </ul> 
+                                            
+                                                <p style="text-align: center;">
+                                                        <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image4.png" style="width: 57%;">
+                                                </p>
+
+                                                
+                                            
+                                            </div>
+                                        </a>
+
+                                        <a href="#" style="font-size: 0; display: block; margin-top: 8px;">
+                                            <p style="font-size: 10px; line-height: 14px; color: #262626; font-weight: 600;">Philips Dry Iron with Golden American Heritage Soleplate,...</p>
+                                        </a>
+
+                                        <a href="#">
+                                            <ul style="padding: 0; display: flex; align-items: center; gap: 2.97px; list-style: none;">
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star-half-filled.png" width="11.89px" height="11.89px"></li>
+                                                <li style="margin-left: 4px; font-size: 10px; line-height: 16px; color: #444444;">1411</li>
+                                            </ul>
+                                        </a>
+
+                                        <a href="#" style="font-size: 14px; line-height: 20px; color: #262626; font-weight: 700; display: block;">
+                                            <span>₹</span><span>1,25,460</span>
+                                        </a>
+
+                                        <a href="#" style="display: flex; align-items: center; gap: 4px;">
+                                            <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">
+                                                <span>MRP</span><span style="margin-left: 2px;">₹</span><span>1,34,9000</span>
+                                            </p>
+                                            
+                                            <p style="font-size: 9px; line-height: 15px; color: #ffffff; background-color: #D60611; padding: 0 8px; border-radius: 16px;">50% off</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="productCardInn" style="list-style: none; margin-left: 0; margin-right: 11px; font-size: 16px;">
+                                        <a href="#">
+                                            <div style="border: 1px solid #DCDCDC; border-radius: 16px; padding: 8px 4.56px 46px 5px; display: block;">
+                                                <ul style="padding: 0; font-size: 0; margin-bottom: 8px;">
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #000000; border: 1px solid #000000; border-radius: 56px; margin-right: 4px;">
+                                                        <span><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/vs-logo.png" width="13.44px" height="6.72px"/></span>
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #ffffff; margin-left: 4px;">Recommended</span>
+                                                    </li>
+
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #ffffff; border: 1px solid #000000; border-radius: 56px;">
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #000000;">Best Seller</span>
+                                                    </li>
+                                                </ul> 
+                                            
+                                                <p style="text-align: center;">
+                                                        <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image4.png" style="width: 57%;">
+                                                </p>
+
+                                                
+                                            
+                                            </div>
+                                        </a>
+
+                                        <a href="#" style="font-size: 0; display: block; margin-top: 8px;">
+                                            <p style="font-size: 10px; line-height: 14px; color: #262626; font-weight: 600;">Philips Dry Iron with Golden American Heritage Soleplate,...</p>
+                                        </a>
+
+                                        <a href="#">
+                                            <ul style="padding: 0; display: flex; align-items: center; gap: 2.97px; list-style: none;">
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star-half-filled.png" width="11.89px" height="11.89px"></li>
+                                                <li style="margin-left: 4px; font-size: 10px; line-height: 16px; color: #444444;">1411</li>
+                                            </ul>
+                                        </a>
+
+                                        <a href="#" style="font-size: 14px; line-height: 20px; color: #262626; font-weight: 700; display: block;">
+                                            <span>₹</span><span>1,25,460</span>
+                                        </a>
+
+                                        <a href="#" style="display: flex; align-items: center; gap: 4px;">
+                                            <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">
+                                                <span>MRP</span><span style="margin-left: 2px;">₹</span><span>1,34,9000</span>
+                                            </p>
+                                            
+                                            <p style="font-size: 9px; line-height: 15px; color: #ffffff; background-color: #D60611; padding: 0 8px; border-radius: 16px;">50% off</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="productCardInn" style="list-style: none; margin-left: 0; margin-right: 11px; font-size: 16px;">
+                                        <a href="#">
+                                            <div style="border: 1px solid #DCDCDC; border-radius: 16px; padding: 8px 4.56px 46px 5px; display: block;">
+                                                <ul style="padding: 0; font-size: 0; margin-bottom: 8px;">
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #000000; border: 1px solid #000000; border-radius: 56px; margin-right: 4px;">
+                                                        <span><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/vs-logo.png" width="13.44px" height="6.72px"/></span>
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #ffffff; margin-left: 4px;">Recommended</span>
+                                                    </li>
+
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #ffffff; border: 1px solid #000000; border-radius: 56px;">
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #000000;">Best Seller</span>
+                                                    </li>
+                                                </ul> 
+                                            
+                                                <p style="text-align: center;">
+                                                        <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image4.png" style="width: 57%;">
+                                                </p>
+
+                                                
+                                            
+                                            </div>
+                                        </a>
+
+                                        <a href="#" style="font-size: 0; display: block; margin-top: 8px;">
+                                            <p style="font-size: 10px; line-height: 14px; color: #262626; font-weight: 600;">Philips Dry Iron with Golden American Heritage Soleplate,...</p>
+                                        </a>
+
+                                        <a href="#">
+                                            <ul style="padding: 0; display: flex; align-items: center; gap: 2.97px; list-style: none;">
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star-half-filled.png" width="11.89px" height="11.89px"></li>
+                                                <li style="margin-left: 4px; font-size: 10px; line-height: 16px; color: #444444;">1411</li>
+                                            </ul>
+                                        </a>
+
+                                        <a href="#" style="font-size: 14px; line-height: 20px; color: #262626; font-weight: 700; display: block;">
+                                            <span>₹</span><span>1,25,460</span>
+                                        </a>
+
+                                        <a href="#" style="display: flex; align-items: center; gap: 4px;">
+                                            <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">
+                                                <span>MRP</span><span style="margin-left: 2px;">₹</span><span>1,34,9000</span>
+                                            </p>
+                                            
+                                            <p style="font-size: 9px; line-height: 15px; color: #ffffff; background-color: #D60611; padding: 0 8px; border-radius: 16px;">50% off</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="productCardInn" style="list-style: none; margin-left: 0; font-size: 16px;">
+                                        <a href="#">
+                                            <div style="border: 1px solid #DCDCDC; border-radius: 16px; padding: 8px 4.56px 46px 5px; display: block;">
+                                                <ul style="padding: 0; font-size: 0; margin-bottom: 8px;">
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #000000; border: 1px solid #000000; border-radius: 56px; margin-right: 4px;">
+                                                        <span><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/vs-logo.png" width="13.44px" height="6.72px"/></span>
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #ffffff; margin-left: 4px;">Recommended</span>
+                                                    </li>
+
+                                                    <li style="display: inline-block; margin: 0; padding: 3px 5px; background-color: #ffffff; border: 1px solid #000000; border-radius: 56px;">
+                                                        <span style="font-size: 9px; line-height: 8.88px; font-weight: 600; color: #000000;">Best Seller</span>
+                                                    </li>
+                                                </ul> 
+                                            
+                                                <p style="text-align: center;">
+                                                        <img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/product-image4.png" style="width: 57%;">
+                                                </p>
+
+                                                
+                                            
+                                            </div>
+                                        </a>
+
+                                        <a href="#" style="font-size: 0; display: block; margin-top: 8px;">
+                                            <p style="font-size: 10px; line-height: 14px; color: #262626; font-weight: 600;">Philips Dry Iron with Golden American Heritage Soleplate,...</p>
+                                        </a>
+
+                                        <a href="#">
+                                            <ul style="padding: 0; display: flex; align-items: center; gap: 2.97px; list-style: none;">
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star.png" width="11.89px" height="11.89px"></li>
+                                                <li><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/star-half-filled.png" width="11.89px" height="11.89px"></li>
+                                                <li style="margin-left: 4px; font-size: 10px; line-height: 16px; color: #444444;">1411</li>
+                                            </ul>
+                                        </a>
+
+                                        <a href="#" style="font-size: 14px; line-height: 20px; color: #262626; font-weight: 700; display: block;">
+                                            <span>₹</span><span>1,25,460</span>
+                                        </a>
+
+                                        <a href="#" style="display: flex; align-items: center; gap: 4px;">
+                                            <p style="font-size: 12px; line-height: 16px; color: #7B7B7B; font-weight: 400;">
+                                                <span>MRP</span><span style="margin-left: 2px;">₹</span><span>1,34,9000</span>
+                                            </p>
+                                            
+                                            <p style="font-size: 9px; line-height: 15px; color: #ffffff; background-color: #D60611; padding: 0 8px; border-radius: 16px;">50% off</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="mlr-48"
+                style="display: block; border-top: 1px solid #434343; padding-top: 23px; padding-bottom: 32px; flex-wrap: nowrap; flex: 1;">
                 <td colspan="3" style="float: left; width: 40%;">
-                    <p style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; margin-bottom: 8px;">Follow us on Socials</p>
+                    <p
+                        style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; margin-bottom: 8px;">
+                        Follow us on Socials</p>
 
                     <ul style="float: left; padding-left: 0; margin: 0;">
                         <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/whatsapp.png" width="24px" height="24px"/></a>
-                        </li>
-                        
-                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/facebook.png" width="24px" height="24px"/></a>
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/whatsapp.png"
+                                    width="24px" height="24px" /></a>
                         </li>
 
                         <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/twitter.png" width="24px" height="24px"/></a>
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/facebook.png"
+                                    width="24px" height="24px" /></a>
                         </li>
 
                         <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/instagram.png" width="24px" height="24px"/></a>
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/twitter.png"
+                                    width="24px" height="24px" /></a>
                         </li>
 
                         <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/youtube.png" width="24px" height="24px"/></a>
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/instagram.png"
+                                    width="24px" height="24px" /></a>
+                        </li>
+
+                        <li style="display: inline-block; margin-right: 20px; margin-left: 0;">
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/youtube.png"
+                                    width="24px" height="24px" /></a>
                         </li>
 
                         <li style="display: inline-block; margin-left: 0;">
-                            <a href="#"><img src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/7a1884780e5fe282e18b365bbfd8762703ce5078/payment-processed/linkedin.png" width="24px" height="24px"/></a>
+                            <a href="#"><img
+                                    src="https://raw.githubusercontent.com/DhwaniShah01/Emailer-Assets/a6443d812dee3457c99f3157196e0fc3461eec25/payment-processed/linkedin.png"
+                                    width="24px" height="24px" /></a>
                         </li>
                     </ul>
                 </td>
                 <td colspan="2" style="float: right; width: 60%;">
-                    <p style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; text-align: right;">Copyright &copy; 2024 Vijay Sales. All rights reserved.</p>
+                    <p style="font-size: 12px; line-height: 16px; color: #000000; font-weight: 600; text-align: right;">
+                        Copyright &copy; 2024 Vijay Sales. All rights reserved.</p>
 
                     <p style="padding-left: 0; text-align: right; width: 100%; padding-top: 16px; display: table;">
                         <span style="display: inline-block;">
-                            <a href="#" style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 600; padding-right: 16px; border-right: 1px solid #C4C4C4; text-decoration: underline;">Update my preferences</a>
-                        </span>    
-                    
+                            <a href="#"
+                                style="font-size: 14px; line-height: 18px; color: #434343; font-weight: 600; padding-right: 16px; border-right: 1px solid #C4C4C4; text-decoration: underline;">Update
+                                my preferences</a>
+                        </span>
+
                         <span style="display: inline-block;">
-                            <a href="#" style="padding-left: 16px; font-size: 14px; line-height: 18px; color: #0062FF; font-weight: bold; text-decoration: underline;">Unsubscribe</a>
+                            <a href="#"
+                                style="padding-left: 16px; font-size: 14px; line-height: 18px; color: #0062FF; font-weight: bold; text-decoration: underline;">Unsubscribe</a>
                         </span>
                     </p>
                 </td>
@@ -405,9 +779,8 @@
 
         </tbody>
 
-            
-
     </table>
+
 </body>
 
 </html>
